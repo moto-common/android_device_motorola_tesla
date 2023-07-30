@@ -24,7 +24,11 @@ TARGET_SCREEN_DENSITY := 400
 DEVICE_CHARACTERISTICS += hfr
 
 # Fingerprint
+PRODUCT_PACKAGES += \
+    android.hardware.biometrics.fingerprint@2.3-service.tesla
+
 TARGET_USES_EGISTEC_FINGERPRINT := true
+TARGET_USES_FINGERPRINT_V2_1 := false
 
 # Model
 PRODUCT_MODEL := moto edge 2022
