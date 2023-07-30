@@ -191,5 +191,3 @@ pn557.ko
 ets_fod_mmi.ko
 goodix_brl_mmi.ko
 mali_kbase.ko
-pstore_zone.ko
-pstore_blk.ko
