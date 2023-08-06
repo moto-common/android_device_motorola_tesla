@@ -97,7 +97,6 @@ rtc-mt6685.ko
 emi.ko
 emi-mpu.ko
 clk-chk-mt6879.ko
-clk-dbg-mt6879.ko
 spi-mt65xx.ko
 mt6375.ko
 mt6685-core.ko
@@ -172,8 +171,6 @@ zram.ko
 arm_dsu_pmu.ko
 emi-mpu-v2.ko
 emi-slb.ko
-uload_ind.ko
-load_track.ko
 sec.ko
 cache-parity.ko
 emi-mpu-hook-v1.ko

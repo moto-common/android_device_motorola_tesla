@@ -1,6 +1,4 @@
-gt9896s.ko
 mtk_disp_sec.ko
-clk-dbg-mt6879.ko
 ccci_util_lib.ko
 ccci_auxadc.ko
 ccci_md_clk.ko
@@ -120,16 +118,8 @@ imgsensor-glue.ko
 imgsensor.ko
 camera_eeprom.ko
 camera_af_media.ko
-lc898229.ko
-gt9764.ko
-gt9772a.ko
-gt9772b.ko
-dw9800w.ko
 mot_dubai_dw9800v.ko
-ak7377a.ko
-ak7375c.ko
 mot_dubai_ak7377a.ko
-bu64253gwz.ko
 pda_drv_mt6879.ko
 mtk-cam-plat-util.ko
 mtk-cam-plat-mt6879.ko
@@ -143,7 +133,6 @@ mtk-lpm.ko
 mtk-lpm-dbg-common-v1.ko
 mtk-lpm-plat-v1.ko
 mtk-lpm-dbg-mt6879.ko
-sensorhub.ko
 clk-disable-unused.ko
 mtk-pm-domain-disable-unused.ko
 cpudvfs.ko
