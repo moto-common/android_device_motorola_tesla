@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 /*
-** Copyright 2021, The OmniROM Project
+** Copyright 2023, The Android Open Source Project
 **
 ** Licensed under the Apache License, Version 2.0 (the "License");
 ** you may not use this file except in compliance with the License.
@@ -16,8 +16,11 @@
 ** limitations under the License.
 */
 -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.settings.tesla">
 
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- the padding on the top of the statusbar (usually 0) -->
-    <dimen name="status_bar_padding_top">1dp</dimen>
-</resources>
+    <overlay
+        android:isStatic="true"
+        android:priority="800"
+        android:targetPackage="com.android.settings" />
+</manifest>
