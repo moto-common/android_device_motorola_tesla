@@ -38,6 +38,7 @@ mtk-emi.ko
 mtk-pmic-wrap.ko
 mtk-spmi-pmic.ko
 spmi-mtk-pmif.ko
+aw86715.ko
 mt6315-regulator.ko
 mt6363-regulator.ko
 mtk-vmm-spm.ko
@@ -68,7 +69,6 @@ mtk-mml.ko
 mtk-mml-mt6879.ko
 mtk_panel_ext.ko
 dsi-panel-mot-tianma-nt37701a-655-fhdp-dphy-cmd-144hz.ko
-dsi-panel-mot-dummy-vdo-60hz.ko
 mediatek-drm.ko
 aee_rs.ko
 mmprofile.ko
@@ -92,6 +92,7 @@ blocktag.ko
 pidmap.ko
 mtk-pmic-keys.ko
 mtk-kpd.ko
+ramoops.ko
 regulator-vibrator.ko
 i2c-mt65xx.ko
 rtc-mt6685.ko
@@ -164,5 +165,3 @@ mtk-swpm-perf-arm-pmu.ko
 emi-mpu-v2.ko
 emi-slb.ko
 cache-parity.ko
-aw86715.ko
-ramoops.ko

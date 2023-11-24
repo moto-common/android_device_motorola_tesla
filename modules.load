@@ -34,9 +34,10 @@ mtk_gpu_hal.ko
 mtk_gpufreq_wrapper.ko
 mtk_gpufreq_mt6879.ko
 ged.ko
+mali_prot_alloc.ko
+mali_kbase.ko
 sensorhub.ko
 hf_manager.ko
-mali_prot_alloc.ko
 soc_temp_lvts.ko
 pmic_temp.ko
 thermal-generic-adc.ko
@@ -145,9 +146,11 @@ mtk-dvfsrc-start.ko
 mtk_cm_ipi.ko
 mtk_cm_mgr.ko
 mtk_cm_mgr_mt6879.ko
+mtk_perf_common.ko
 trace_mmstat.ko
 mtk-pwm.ko
 mtk_irtx_pwm.ko
+mtk_core_ctl.ko
 vdec-fmt.ko
 camera_dpe_isp70.ko
 widevine_driver.ko
@@ -169,4 +172,3 @@ touchscreen_mmi.ko
 pn557.ko
 ets_fod_mmi.ko
 goodix_brl_mmi.ko
-mali_kbase.ko

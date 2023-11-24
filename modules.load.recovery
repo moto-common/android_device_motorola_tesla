@@ -107,6 +107,7 @@ device-apc-mt6879.ko
 teeperf.ko
 mcDrvModule.ko
 isee.ko
+ramoops.ko
 industrialio-triggered-buffer.ko
 kfifo_buf.ko
 mt6375-adc.ko
@@ -174,3 +175,5 @@ emi-slb.ko
 sec.ko
 cache-parity.ko
 emi-mpu-hook-v1.ko
+aw86715.ko
+
