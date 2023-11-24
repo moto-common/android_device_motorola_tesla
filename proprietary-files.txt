@@ -201,8 +201,6 @@ vendor/lib/mt6879/mot_dubai_ov50a_mipi_raw_IdxMgr.so
 vendor/lib/mt6879/mot_dubai_ov50a_mipi_raw_tuning.so
 vendor/lib/mt6879/mtk000_mipi_raw_IdxMgr.so
 vendor/lib/mt6879/mtk000_mipi_raw_tuning.so
-vendor/lib/lib3a.ae.core.so
-vendor/lib/lib3a.ae.so
 vendor/lib/lib3a.awb.core.so
 vendor/lib/lib3a.log.so
 vendor/lib/libJpgEncPipe.so
@@ -250,8 +248,6 @@ vendor/lib/vendor.mediatek.hardware.camera.atms@1.0.so
 vendor/lib/vendor.mediatek.hardware.camera.bgservice@1.0.so
 vendor/lib/vendor.mediatek.hardware.camera.bgservice@1.1.so
 vendor/lib64/hw/mt6879/android.hardware.camera.provider@2.6-impl-mediatek.so
-vendor/lib64/hw/mt6879/vendor.mediatek.hardware.camera.bgservice@1.1-impl.so
-vendor/lib64/hw/mt6879/vendor.mediatek.hardware.camera.isphal@1.0-impl.so
 vendor/lib64/hw/mt6879/vendor.mediatek.hardware.camera.atms@1.0-impl.so
 vendor/lib64/hw/mt6879/vendor.mediatek.hardware.camera.bgservice@1.1-impl.so
 vendor/lib64/hw/mt6879/vendor.mediatek.hardware.camera.isphal@1.0-impl.so
@@ -517,8 +513,6 @@ vendor/lib64/libBasicModule.so
 vendor/lib64/libJpgEncPipe.so
 vendor/lib64/libOpenCL.so
 vendor/lib64/libSQLiteModule_VER_ALL.so
-vendor/lib64/lib3a.ae.pipe.so
-vendor/lib64/lib3a.cculog.so
 vendor/lib64/libaaa_gma.so
 vendor/lib64/libanti_eyeglasses_reflection.arcsoft.so
 vendor/lib64/libapu_mdw.so
