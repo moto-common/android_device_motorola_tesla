@@ -37,9 +37,8 @@ ged.ko
 sensorhub.ko
 hf_manager.ko
 mali_prot_alloc.ko
-mali_prot_alloc_mt6879.ko
-mali_mgm_mt6879.ko
-mali_kbase_mt6879.ko
+mali_mgm.ko
+mali_kbase.ko
 soc_temp_lvts.ko
 pmic_temp.ko
 thermal-generic-adc.ko
@@ -78,7 +77,6 @@ mtk_qos.ko
 atf_logger.ko
 mtk-ssc.ko
 mtk-ssc-dbg-v2.ko
-mtk-vmm-dbg.ko
 apu_top.ko
 apusys.ko
 mtk_jpeg.ko
@@ -136,8 +134,6 @@ mtk-lpm.ko
 mtk-lpm-dbg-common-v1.ko
 mtk-lpm-plat-v1.ko
 mtk-lpm-dbg-mt6879.ko
-hf_manager.ko
-sensorhub.ko
 clk-disable-unused.ko
 mtk-pm-domain-disable-unused.ko
 cpudvfs.ko
@@ -153,7 +149,6 @@ mtk_cm_mgr_mt6879.ko
 mtk_perf_common.ko
 task_turbo.ko
 mtk_fpsgo.ko
-fpsgo.ko
 mtk_perf_ioctl.ko
 frs.ko
 trace_mmstat.ko
@@ -184,4 +179,3 @@ touchscreen_mmi.ko
 pn557.ko
 ets_fod_mmi.ko
 goodix_brl_mmi.ko
-mali_kbase.ko

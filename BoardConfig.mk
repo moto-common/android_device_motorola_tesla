@@ -12,6 +12,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Modules
+BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD := $(strip $(shell cat device/motorola/tesla/modules.load.ramdisk))
+BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(strip $(shell cat device/motorola/tesla/modules.load.recovery))
+BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat device/motorola/tesla/modules.load))
+BOARD_VENDOR_KERNEL_MODULES :=  $(foreach module,$(BOARD_VENDOR_KERNEL_MODULES_LOAD),$(TARGET_DEVICE_DIR)-kernel/modules/$(module))
+
 # Platform
 PRODUCT_PLATFORM := mt6879
 include device/motorola/mt6879-common/PlatformConfig.mk
@@ -24,13 +30,10 @@ BOARD_SUPER_PARTITION_SIZE := 10787749888
 BOARD_SUPER_PARTITION_GROUPS := mot_dynamic_partitions
 BOARD_MOT_DYNAMIC_PARTITIONS_PARTITION_LIST := system vendor product
 BOARD_MOT_DYNAMIC_PARTITIONS_SIZE := 5389680640
-
 BOARD_VENDOR_BOOTIMAGE_PARTITION_SIZE := $(BOARD_BOOTIMAGE_PARTITION_SIZE)
 
-
+# Recovery
 TARGET_NO_RECOVERY := true
 
-BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD := $(strip $(shell cat device/motorola/tesla/modules.load.ramdisk))
-BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(strip $(shell cat device/motorola/tesla/modules.load.recovery))
-BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat device/motorola/tesla/modules.load))
-BOARD_VENDOR_KERNEL_MODULES :=  $(foreach module,$(BOARD_VENDOR_KERNEL_MODULES_LOAD),$(TARGET_DEVICE_DIR)-kernel/modules/$(module))
+# SEPolicy
+BOARD_VENDOR_SEPOLICY_DIRS += device/motorola/tesla/sepolicy
