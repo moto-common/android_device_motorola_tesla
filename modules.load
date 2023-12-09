@@ -1,4 +1,6 @@
+gt9896s.ko
 mtk_disp_sec.ko
+clk-dbg-mt6879.ko
 ccci_util_lib.ko
 ccci_auxadc.ko
 ccci_md_clk.ko
@@ -34,10 +36,7 @@ mtk_gpu_hal.ko
 mtk_gpufreq_wrapper.ko
 mtk_gpufreq_mt6879.ko
 ged.ko
-sensorhub.ko
-hf_manager.ko
 mali_prot_alloc.ko
-mali_mgm.ko
 mali_kbase.ko
 soc_temp_lvts.ko
 pmic_temp.ko
@@ -77,6 +76,7 @@ mtk_qos.ko
 atf_logger.ko
 mtk-ssc.ko
 mtk-ssc-dbg-v2.ko
+mtk-vmm-dbg.ko
 apu_top.ko
 apusys.ko
 mtk_jpeg.ko
@@ -91,6 +91,7 @@ gz_irq_mod.ko
 gz_virtio_mod.ko
 gz_ipc_mod.ko
 gz_tz_system.ko
+iommu_gz.ko
 trusted_mem.ko
 mtk_sec_heap.ko
 mtk_heap_debug.ko
@@ -119,8 +120,16 @@ imgsensor-glue.ko
 imgsensor.ko
 camera_eeprom.ko
 camera_af_media.ko
+lc898229.ko
+gt9764.ko
+gt9772a.ko
+gt9772b.ko
+dw9800w.ko
 mot_dubai_dw9800v.ko
+ak7377a.ko
+ak7375c.ko
 mot_dubai_ak7377a.ko
+bu64253gwz.ko
 pda_drv_mt6879.ko
 mtk-cam-plat-util.ko
 mtk-cam-plat-mt6879.ko
@@ -134,9 +143,14 @@ mtk-lpm.ko
 mtk-lpm-dbg-common-v1.ko
 mtk-lpm-plat-v1.ko
 mtk-lpm-dbg-mt6879.ko
+hf_manager.ko
+sensorhub.ko
 clk-disable-unused.ko
 mtk-pm-domain-disable-unused.ko
 cpudvfs.ko
+cpufreq_sugov_ext.ko
+scheduler.ko
+cpuqos_v3.ko
 zsmalloc.ko
 zram.ko
 mtk-swpm.ko
@@ -160,7 +174,6 @@ load_track.ko
 vdec-fmt.ko
 camera_dpe_isp70.ko
 widevine_driver.ko
-mtk-vmm-dbg.ko
 sec.ko
 emi-mpu-hook-v1.ko
 mmqos-md.ko
@@ -174,7 +187,6 @@ wmt_chrdev_wifi_connac2.ko
 wlan_drv_gen4m_6879.ko
 mmi_relay.ko
 utags.ko
-sensors_class.ko
 touchscreen_mmi.ko
 pn557.ko
 ets_fod_mmi.ko

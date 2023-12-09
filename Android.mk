@@ -19,7 +19,7 @@ include $(call all-subdir-makefiles,$(LOCAL_PATH))
 
 include $(CLEAR_VARS)
 
-TESLA_SYMLINK := $(addprefix $(TARGET_OUT_VENDOR)/, $(strip $(shell cat $(LOCAL_PATH)/symlinks.txt)))
+TESLA_SYMLINK := $(addprefix $(TARGET_OUT_VENDOR)/, $(strip $(shell $(LOCAL_PATH)/make_symlinks.sh)))
 $(TESLA_SYMLINK): $(LOCAL_INSTALLED_MODULE)
 	@mkdir -p $(dir $@)
 	$(hide) ln -sf mt6879/$(notdir $@) $@

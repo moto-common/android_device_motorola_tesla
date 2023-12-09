@@ -1,5 +1,6 @@
 mkp.ko
 bootprof.ko
+bq25980_mmi.ko
 mtk-uart-apdma.ko
 8250_mtk.ko
 dbgtop-drm.ko
@@ -67,6 +68,7 @@ mtk-mml.ko
 mtk-mml-mt6879.ko
 mtk_panel_ext.ko
 dsi-panel-mot-tianma-nt37701a-655-fhdp-dphy-cmd-144hz.ko
+dsi-panel-mot-tianma-nt37701a-655-fhdp-dphy-cmd-rode.ko
 dsi-panel-mot-dummy-vdo-60hz.ko
 mediatek-drm.ko
 aee_rs.ko
@@ -97,12 +99,14 @@ rtc-mt6685.ko
 emi.ko
 emi-mpu.ko
 clk-chk-mt6879.ko
+clk-dbg-mt6879.ko
 spi-mt65xx.ko
 mt6375.ko
 mt6685-core.ko
 mt6685-audclk.ko
 extdev_io_class.ko
 clkbuf.ko
+device-apc-common.ko
 device-apc-mt6879.ko
 teeperf.ko
 mcDrvModule.ko
@@ -142,6 +146,7 @@ leds-mtk-disp.ko
 leds-mtk-pwm.ko
 extcon-mtk-usb.ko
 tcpci_late_sync.ko
+meta.ko
 mtk_battery_oc_throttling.ko
 mtk_low_battery_throttling.ko
 pmic_lbat_service.ko
@@ -152,7 +157,6 @@ reboot-mode.ko
 syscon-reboot-mode.ko
 reset-ti-syscon.ko
 fsa4480.ko
-meta.ko
 mtk-cqdma.ko
 mtk_sync.ko
 mtk_rpmsg_mbox.ko
@@ -171,8 +175,6 @@ zram.ko
 arm_dsu_pmu.ko
 emi-mpu-v2.ko
 emi-slb.ko
-uload_ind.ko
-load_track.ko
 sec.ko
 cache-parity.ko
 emi-mpu-hook-v1.ko

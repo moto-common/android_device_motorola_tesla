@@ -35,6 +35,7 @@ mtk_dramc.ko
 mtk-dvfsrc.ko
 mtk-dvfsrc-regulator.ko
 mtk-emi.ko
+tui-common.ko
 mtk-pmic-wrap.ko
 mtk-spmi-pmic.ko
 spmi-mtk-pmif.ko
@@ -68,6 +69,7 @@ mtk-mml.ko
 mtk-mml-mt6879.ko
 mtk_panel_ext.ko
 dsi-panel-mot-tianma-nt37701a-655-fhdp-dphy-cmd-144hz.ko
+dsi-panel-mot-tianma-nt37701a-655-fhdp-dphy-cmd-rode.ko
 dsi-panel-mot-dummy-vdo-60hz.ko
 mediatek-drm.ko
 aee_rs.ko
@@ -106,6 +108,7 @@ mt6685-core.ko
 mt6685-audclk.ko
 extdev_io_class.ko
 clkbuf.ko
+device-apc-common.ko
 device-apc-mt6879.ko
 teeperf.ko
 mcDrvModule.ko
@@ -145,12 +148,12 @@ leds-mtk-disp.ko
 leds-mtk-pwm.ko
 extcon-mtk-usb.ko
 tcpci_late_sync.ko
+meta.ko
 pmic_lbat_service.ko
 reset-ti-syscon.ko
 adsp.ko
 mtk_slbc.ko
 vcp_status.ko
-meta.ko
 mtk_sync.ko
 moto_chg_tcmd.ko
 mtk-mbox-mailbox.ko
@@ -165,4 +168,3 @@ emi-mpu-v2.ko
 emi-slb.ko
 cache-parity.ko
 aw86715.ko
-ramoops.ko
