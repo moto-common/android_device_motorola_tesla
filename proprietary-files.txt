@@ -112,12 +112,26 @@ vendor/etc/audio_param/VolumeGainMap_AudioParam.xml
 vendor/etc/audio_param/VolumeGainMap_ParamUnitDesc.xml
 vendor/etc/audio_param/Volume_AudioParam.xml
 vendor/etc/audio_param/Volume_ParamUnitDesc.xml
+vendor/etc/lvacfs_params/3mic/LVACFS_Audiozoom.txt
+vendor/etc/lvacfs_params/3mic/LVACFS_Audiozoom_NR.txt
+vendor/etc/lvacfs_params/3mic/LVACFS_Calibration_3mic.dat
+vendor/etc/lvacfs_params/3mic/LVACFS_Configuration.txt
+vendor/etc/lvacfs_params/3mic/audiozoom_1.txt
+vendor/etc/lvacfs_params/3mic/audiozoom_101.txt
+vendor/etc/lvacfs_params/3mic/audiozoom_102.txt
+vendor/etc/lvacfs_params/3mic/audiozoom_3.txt
+vendor/etc/smartpa_param/AW_DSP.bin
 vendor/etc/AudioLog_dynamic.xml
+vendor/etc/a2dp_audio_policy_configuration.xml
+vendor/etc/a2dp_in_audio_policy_configuration.xml
+vendor/etc/ap_gain.bin
+vendor/etc/ap_gain_mmul.bin
 vendor/etc/audio_device.xml
 vendor/etc/audio_em.xml
+vendor/etc/audio_policy.conf
 vendor/etc/aurisys_config.xml
 vendor/etc/aurisys_config_hifi3.xml
-vendor/etc/smartpa_param/AW_DSP.bin
+vendor/etc/aurisys_config_rv.xml
 
 # Camera
 vendor/bin/crossbuild/DataSet/SQLiteModule/db/ae/mt6879/ParameterDB_ae.db
@@ -589,7 +603,13 @@ vendor/lib64/vendor.mediatek.hardware.camera.lomoeffect@1.0.so
 vendor/lib64/vendor.mediatek.hardware.camera.postproc@1.0.so
 vendor/lib64/vendor.mediatek.hardware.camera.security@1.0.so
 
-# Display
+# Camera configs
+vendor/etc/arcsoft_calibration_u_dc.bin
+vendor/etc/dual_golden_depth.bin
+vendor/etc/dual_golden_wide.bin
+
+# Display configs
+vendor/etc/aivrs.ini
 vendor/etc/cust_color.xml
 vendor/etc/cust_silky_brightness.xml
 
@@ -766,4 +786,5 @@ vendor/app/mcRegistry/e97c270ea5c44c58bcd3384a2fa2539e.tabin
 vendor/app/mcRegistry/ffffffff000000000000000000000003.tabin
 
 # Sensors
+vendor/etc/motorola/sensors/mot_sensor_settings.json
 vendor/lib64/hw/sensors.mediatek.V2.0.so:vendor/lib64/hw/sensors.tesla.so
