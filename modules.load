@@ -163,6 +163,7 @@ mtk_cm_mgr_mt6879.ko
 mtk_perf_common.ko
 task_turbo.ko
 mtk_fpsgo.ko
+fpsgo.ko
 mtk_perf_ioctl.ko
 frs.ko
 trace_mmstat.ko

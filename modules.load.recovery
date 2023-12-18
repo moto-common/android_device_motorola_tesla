@@ -1,5 +1,4 @@
 mkp.ko
-bootprof.ko
 bq25980_mmi.ko
 mtk-uart-apdma.ko
 8250_mtk.ko
