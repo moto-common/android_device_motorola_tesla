@@ -55,9 +55,6 @@ fi
 
 function blob_fixup() {
     case "${1}" in
-        vendor/bin/hw/mt6879/camerahalserver)
-            "${PATCHELF}" --replace-needed libutils.so libutils-v32.so "${2}"
-            ;;
         vendor/lib64/mt6879/libmtkcam_thirdparty.mtk.so)
             sed -i "s/camera.mot.is.coming.cts/vendor.camera.coming.cts/g" "${2}"
             ;;
