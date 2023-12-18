@@ -110,6 +110,7 @@ clkbuf.ko
 device-apc-common.ko
 device-apc-mt6879.ko
 teeperf.ko
+utags.ko
 mcDrvModule.ko
 isee.ko
 industrialio-triggered-buffer.ko

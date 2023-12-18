@@ -187,7 +187,6 @@ fmradio_drv_mt6631_6635.ko
 wmt_chrdev_wifi_connac2.ko
 wlan_drv_gen4m_6879.ko
 mmi_relay.ko
-utags.ko
 touchscreen_mmi.ko
 pn557.ko
 ets_fod_mmi.ko
