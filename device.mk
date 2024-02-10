@@ -34,7 +34,7 @@ TARGET_USES_FINGERPRINT_V2_1 := false
 PRODUCT_MODEL := moto edge 2022
 
 # NFC
-TARGET_USES_PN5XX_PN8X_NFC := true
+TARGET_USES_NXP_NFC := true
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/motorola/mt6879-common/platform.mk)
