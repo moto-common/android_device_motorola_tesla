@@ -16,7 +16,6 @@
 BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD := $(strip $(shell cat device/motorola/tesla/modules.load.ramdisk))
 BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(strip $(shell cat device/motorola/tesla/modules.load.recovery))
 BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat device/motorola/tesla/modules.load))
-BOARD_VENDOR_KERNEL_MODULES :=  $(foreach module,$(BOARD_VENDOR_KERNEL_MODULES_LOAD),$(TARGET_DEVICE_DIR)-kernel/modules/$(module))
 
 # Platform
 PRODUCT_PLATFORM := mt6879
