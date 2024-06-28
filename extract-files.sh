@@ -61,6 +61,14 @@ function blob_fixup() {
         vendor/lib64/mt6879/libmtkcam_hal_core_featurepolicy.so)
             sed -i "s/camera.mot.is.coming.cts/vendor.camera.coming.cts/g" "${2}"
             ;;
+        vendor/bin/hw/mt6879/camerahalserver)
+            ;&
+        vendor/lib64/mt6879/libmtkcam_stdutils.so)
+            "${PATCHELF}" --replace-needed "libbinder.so" "libbinder-v32.so" "${2}"
+            "${PATCHELF}" --replace-needed "libhidlbase.so" "libhidlbase-v32.so" "${2}"
+            "${PATCHELF}" --replace-needed "libcutils.so" "libcutils-v32.so" "${2}"
+            "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
+            ;;
     esac
 }
 
