@@ -36,6 +36,10 @@ PRODUCT_MODEL := moto edge 2022
 # NFC
 TARGET_USES_NXP_NFC := true
 
+# Sensors
+PRODUCT_PACKAGES += \
+    sensors.tesla
+
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/motorola/mt6879-common/platform.mk)
 
