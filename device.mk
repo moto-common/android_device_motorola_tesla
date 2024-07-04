@@ -40,6 +40,9 @@ TARGET_USES_NXP_NFC := true
 PRODUCT_PACKAGES += \
     sensors.moto
 
+# Soong
+PRODUCT_SOONG_NAMESPACES += device/motorola/tesla
+
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/motorola/mt6879-common/platform.mk)
 
