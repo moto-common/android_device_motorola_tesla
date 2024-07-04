@@ -16,7 +16,8 @@
 
 #pragma once
 
-#include <android/hardware/sensors/2.1/types.h>
+#include <android/hardware/sensors/2.0/types.h>
+#include <android/hardware/sensors/2.0/ISensors.h>
 #include <fcntl.h>
 #include <poll.h>
 #include <unistd.h>
@@ -30,14 +31,14 @@
 
 using ::android::hardware::sensors::V1_0::OperationMode;
 using ::android::hardware::sensors::V1_0::Result;
-using ::android::hardware::sensors::V2_1::Event;
-using ::android::hardware::sensors::V2_1::SensorInfo;
-using ::android::hardware::sensors::V2_1::SensorType;
+using ::android::hardware::sensors::V1_0::Event;
+using ::android::hardware::sensors::V1_0::SensorInfo;
+using ::android::hardware::sensors::V1_0::SensorType;
 
 namespace android {
 namespace hardware {
 namespace sensors {
-namespace V2_1 {
+namespace V2_0 {
 namespace subhal {
 namespace implementation {
 
@@ -159,7 +160,7 @@ class UdfpsSensor : public SysfsPollingOneShotSensor {
 
 }  // namespace implementation
 }  // namespace subhal
-}  // namespace V2_1
+}  // namespace V2_0
 }  // namespace sensors
 }  // namespace hardware
 }  // namespace android

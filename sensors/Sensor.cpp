@@ -46,7 +46,7 @@ static bool readBool(int fd, bool seek) {
 namespace android {
 namespace hardware {
 namespace sensors {
-namespace V2_1 {
+namespace V2_0 {
 namespace subhal {
 namespace implementation {
 
@@ -55,9 +55,9 @@ using ::android::hardware::sensors::V1_0::OperationMode;
 using ::android::hardware::sensors::V1_0::Result;
 using ::android::hardware::sensors::V1_0::SensorFlagBits;
 using ::android::hardware::sensors::V1_0::SensorStatus;
-using ::android::hardware::sensors::V2_1::Event;
-using ::android::hardware::sensors::V2_1::SensorInfo;
-using ::android::hardware::sensors::V2_1::SensorType;
+using ::android::hardware::sensors::V1_0::Event;
+using ::android::hardware::sensors::V1_0::SensorInfo;
+using ::android::hardware::sensors::V1_0::SensorType;
 
 Sensor::Sensor(int32_t sensorHandle, ISensorsEventCallback* callback)
     : mIsEnabled(false),
@@ -107,6 +107,7 @@ void Sensor::batch(int32_t samplingPeriodNs) {
 void Sensor::activate(bool enable) {
     std::lock_guard<std::mutex> lock(mRunMutex);
     if (mIsEnabled != enable) {
+        ALOGE("ENABLED");
         mIsEnabled = enable;
         mWaitCV.notify_all();
     }
@@ -132,6 +133,7 @@ Result Sensor::flush() {
 }
 
 void Sensor::startThread(Sensor* sensor) {
+    ALOGE("runningbitch");
     sensor->run();
 }
 
@@ -355,7 +357,7 @@ void SysfsPollingOneShotSensor::fillEventData(Event& event) {
 
 }  // namespace implementation
 }  // namespace subhal
-}  // namespace V2_1
+}  // namespace V2_0
 }  // namespace sensors
 }  // namespace hardware
 }  // namespace android

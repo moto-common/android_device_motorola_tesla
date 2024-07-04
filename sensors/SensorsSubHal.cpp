@@ -16,16 +16,16 @@
 
 #include "SensorsSubHal.h"
 
-#include <android/hardware/sensors/2.1/types.h>
+#include <android/hardware/sensors/2.0/types.h>
 #include <log/log.h>
 
-using ::android::hardware::sensors::V2_1::implementation::ISensorsSubHal;
-using ::android::hardware::sensors::V2_1::subhal::implementation::SensorsSubHal;
+using ::android::hardware::sensors::V2_0::implementation::ISensorsSubHal;
+using ::android::hardware::sensors::V2_0::subhal::implementation::SensorsSubHal;
 
 namespace android {
 namespace hardware {
 namespace sensors {
-namespace V2_1 {
+namespace V2_0 {
 namespace subhal {
 namespace implementation {
 
@@ -38,7 +38,7 @@ SensorsSubHal::SensorsSubHal() : mCallback(nullptr), mNextHandle(1) {
     AddSensor<UdfpsSensor>();
 }
 
-Return<void> SensorsSubHal::getSensorsList_2_1(ISensors::getSensorsList_2_1_cb _hidl_cb) {
+Return<void> SensorsSubHal::getSensorsList(ISensors::getSensorsList_cb _hidl_cb) {
     std::vector<SensorInfo> sensors;
     for (const auto& sensor : mSensors) {
         sensors.push_back(sensor.second->getSensorInfo());
@@ -82,7 +82,7 @@ Return<Result> SensorsSubHal::flush(int32_t sensorHandle) {
     return Result::BAD_VALUE;
 }
 
-Return<Result> SensorsSubHal::injectSensorData_2_1(const Event& event) {
+Return<Result> SensorsSubHal::injectSensorData(const Event& event) {
     auto sensor = mSensors.find(event.sensorHandle);
     if (sensor != mSensors.end()) {
         return sensor->second->injectEvent(event);
@@ -152,13 +152,13 @@ void SensorsSubHal::postEvents(const std::vector<Event>& events, bool wakeup) {
 
 }  // namespace implementation
 }  // namespace subhal
-}  // namespace V2_1
+}  // namespace V2_0
 }  // namespace sensors
 }  // namespace hardware
 }  // namespace android
 
-ISensorsSubHal* sensorsHalGetSubHal_2_1(uint32_t* version) {
+ISensorsSubHal* sensorsHalGetSubHal(uint32_t* version) {
     static SensorsSubHal subHal;
-    *version = SUB_HAL_2_1_VERSION;
+    *version = SUB_HAL_2_0_VERSION;
     return &subHal;
 }

@@ -19,12 +19,12 @@
 #include <vector>
 
 #include "Sensor.h"
-#include "V2_1/SubHal.h"
+#include "V2_0/SubHal.h"
 
 namespace android {
 namespace hardware {
 namespace sensors {
-namespace V2_1 {
+namespace V2_0 {
 namespace subhal {
 namespace implementation {
 
@@ -32,16 +32,16 @@ using ::android::hardware::sensors::V1_0::OperationMode;
 using ::android::hardware::sensors::V1_0::RateLevel;
 using ::android::hardware::sensors::V1_0::Result;
 using ::android::hardware::sensors::V1_0::SharedMemInfo;
-using ::android::hardware::sensors::V2_1::Event;
-using ::android::hardware::sensors::V2_1::implementation::IHalProxyCallback;
-using ::android::hardware::sensors::V2_1::implementation::ISensorsSubHal;
+using ::android::hardware::sensors::V1_0::Event;
+using ::android::hardware::sensors::V2_0::implementation::IHalProxyCallback;
+using ::android::hardware::sensors::V2_0::implementation::ISensorsSubHal;
 
 class SensorsSubHal : public ISensorsSubHal, public ISensorsEventCallback {
   public:
     SensorsSubHal();
 
-    Return<void> getSensorsList_2_1(ISensors::getSensorsList_2_1_cb _hidl_cb);
-    Return<Result> injectSensorData_2_1(const Event& event);
+    Return<void> getSensorsList(ISensors::getSensorsList_cb _hidl_cb);
+    Return<Result> injectSensorData(const Event& event);
     Return<Result> initialize(const sp<IHalProxyCallback>& halProxyCallback);
 
     virtual Return<Result> setOperationMode(OperationMode mode);
@@ -88,7 +88,7 @@ class SensorsSubHal : public ISensorsSubHal, public ISensorsEventCallback {
 
 }  // namespace implementation
 }  // namespace subhal
-}  // namespace V2_1
+}  // namespace V2_0
 }  // namespace sensors
 }  // namespace hardware
 }  // namespace android
